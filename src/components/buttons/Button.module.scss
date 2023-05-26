@@ -1,0 +1,75 @@
+.button {
+    $border-width: 0.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 20rem;
+    height: 4.4rem;
+
+    border-radius: 5rem;
+
+    gap: 1rem;
+
+    color: $clr-bg-main;
+    background: $clr-txt-h3-green;
+
+    border: none;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        cursor: pointer;
+
+        filter: brightness(0.4);
+    }
+
+    &__icon path {
+        fill: $clr-bg-main;
+        stroke: $clr-bg-main;
+    }
+
+    &_peach {
+        background: $clr-txt-p-yellow;
+
+        &:hover {}
+    }
+
+    &_outline {
+        background: transparent;
+        background-color: $clr-bg-main;
+        color: $clr-txt-h3-teal;
+        background-clip: padding-box;
+
+        & .button__icon path {
+            fill: $clr-txt-h3-teal;
+            stroke: $clr-txt-h3-teal;
+        }
+
+        &:hover {
+            background-color: $clr-txt-h3-green;
+            color: $clr-bg-main;
+        }
+    }
+
+    &_outline#{&}_peach {
+        color: $clr-txt-p-yellow;
+
+        & .button__icon path {
+            fill: $clr-txt-p-yellow;
+            stroke: $clr-txt-p-yellow;
+        }
+
+        &:hover {
+            background-color: $clr-fltr-red;
+            color: $clr-bg-main;
+        }
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}

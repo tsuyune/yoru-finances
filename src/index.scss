@@ -1,0 +1,49 @@
+@import './normalize.css';
+
+$clr-bg-main: hsla(223, 27%, 27%, 1);
+
+$clr-fltr-black: hsla(0, 0%, 0%, 0.1);
+$clr-fltr-red: hsla(2, 59%, 61%, 1);
+
+$clr-txt-h1-peach: hsla(24, 74%, 82%, 1);
+$clr-txt-h2-rose: hsla(347, 51%, 59%, 1);
+$clr-txt-h3-teal: hsla(161, 48%, 62%, 1);
+$clr-txt-h3-green: hsla(101, 64%, 74%, 1);
+$clr-txt-p-white: hsla(0, 0%, 100%, 1);
+$clr-txt-p-lavander: hsla(225, 76%, 92%, 1);
+$clr-txt-p-yellow: hsla(54, 74%, 82%, 1);
+
+@font-face {
+  font-family: 'Quando';
+  src: url(@/assets/fonts/quando/quando-variablefont_wght.woff2) format("woff2-variations");
+  src: url(@/assets/fonts/quando/quando.woff2) format("woff2");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url(@/assets/fonts/montserrat/montserrat-variablefont_wght.woff2) format("woff2-variations");
+  src: url(@/assets/fonts/montserrat/montserrat.woff2) format("woff2");
+  font-weight: 1 999;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/montserrat/montserrat-italic-variablefont_wght.woff2') format("woff2-variations");
+  src: url('./assets/fonts/montserrat/montserrat-italic.woff2') format("woff2");
+  font-style: italic;
+  font-weight: 1 999;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.25;
+  background-color: $clr-bg-main;
+}
