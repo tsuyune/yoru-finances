@@ -22,7 +22,7 @@
     &:hover {
         cursor: pointer;
 
-        filter: brightness(0.4);
+        @include darken-on-hover($clr-txt-h3-green, -30%, -15%);
     }
 
     &__icon path {
@@ -31,9 +31,11 @@
     }
 
     &_peach {
-        background: $clr-txt-p-yellow;
+        background: $clr-txt-h1-peach;
 
-        &:hover {}
+        &:hover {
+            @include darken-on-hover($clr-txt-h1-peach, -30%, -15%);
+        }
     }
 
     &_outline {

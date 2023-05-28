@@ -3,22 +3,33 @@
     justify-content: space-between;
     align-items: center;
 
-    padding: 1.8rem 2.5rem;
+    padding: 2rem 2.5rem;
 
     border: 0.1rem solid $clr-txt-h3-teal;
     border-radius: 0.4rem;
 
-    background-color: $clr-fltr-black;
+    background-color: $clr-bg-dark;
 
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
+
+    &:hover:not(&_active) {
+        @include darken-on-hover($clr-bg-dark, 2%, -5%);
+    }
 
     &_active {
-        background-color: #fff;
+        background-color: $clr-txt-h3-green;
+        border-color: $clr-txt-h3-green;
+
+        >* {
+            color: $clr-txt-p-darkblue;
+        }
     }
 }
 
-.date {}
-
-.account {}
-
-.store {}
+.date,
+.account,
+.store {
+    padding: 0;
+    margin: 0;
+}
