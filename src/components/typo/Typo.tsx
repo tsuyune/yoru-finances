@@ -1,9 +1,11 @@
 import { ReactNode } from 'react';
 import styles from './Typo.module.scss';
 
+export type TagValue = 'h1' | 'h2' | 'h3' | 'span' | 'div' | 'p' | 'time'
+
 interface TypoProps {
   className?: string;
-  tag: 'h1' | 'h2' | 'h3' | 'span' | 'div' | 'p' | 'time';
+  tag: TagValue;
   type?: string;
   children?: ReactNode;
   dateTime?: string;

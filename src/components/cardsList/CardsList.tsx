@@ -5,16 +5,6 @@ import Typo from '../typo/Typo';
 import CardReceipt from '../cardReceipt/CardReceipt';
 import { useState } from 'react';
 
-const dateOptions = {
-  year: 'numeric',
-  month: 'numeric',
-  day: 'numeric',
-  hour: 'numeric',
-  minute: 'numeric',
-  second: 'numeric',
-} as const;
-
-const date = new Date().toLocaleString('ru-RU', dateOptions).toString();
 const account = 'ABN Amro';
 const store = 'Pyaterochka';
 
@@ -33,8 +23,6 @@ export default function CardsList() {
           <CardReceipt
             onClick={() => setActiveIndex(i)}
             isActive={activeIndex == i}
-            className="card"
-            date={date}
             account={account}
             store={store}
           />
