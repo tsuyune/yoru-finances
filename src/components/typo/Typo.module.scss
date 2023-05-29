@@ -6,17 +6,6 @@
     color: $clr-txt-h1-peach;
 }
 
-.h2 {
-    font-size: 2.8rem;
-    font-weight: 900;
-    font-style: italic;
-
-    line-height: 1.2143;
-    letter-spacing: 6.5%;
-
-    color: $clr-txt-h2-rose;
-}
-
 .h3 {
     font-size: 1.2rem;
     font-weight: 700;
@@ -24,10 +13,11 @@
 
     &_decor {
         color: $clr-txt-p-lavander;
-    } 
-    
+    }
+
     &_account,
-    &_store, &_decor {
+    &_store,
+    &_decor {
         margin: 0;
     }
 
@@ -41,7 +31,8 @@
 }
 
 .p,
-.time {
+.time,
+.span {
     font-size: 1.6rem;
 
     &_date {
@@ -61,4 +52,16 @@
     &_secondary {
         color: $clr-txt-p-lavander;
     }
+}
+
+.h2,
+.span_price {
+    font-size: 2.8rem;
+    font-weight: 900;
+    font-style: italic;
+
+    line-height: 1.2143;
+    letter-spacing: 0.065em;
+
+    color: $clr-txt-h1-peach;
 }
