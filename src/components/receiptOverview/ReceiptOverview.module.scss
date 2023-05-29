@@ -1,3 +1,8 @@
 .column {
     min-width: 55rem;
+
+    border-radius: 0.4rem;
+    border: 0.2rem dotted $clr-txt-h3-teal;
+
+    @include darken-background($clr-bg-main, 2%, -3%)
 }

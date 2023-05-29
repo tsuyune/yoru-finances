@@ -22,7 +22,7 @@
     &:hover {
         cursor: pointer;
 
-        @include darken-on-hover($clr-txt-h3-green, -30%, -15%);
+        @include darken-background($clr-txt-h3-green, -30%, -15%);
     }
 
     &__icon path {
@@ -34,7 +34,7 @@
         background: $clr-txt-h1-peach;
 
         &:hover {
-            @include darken-on-hover($clr-txt-h1-peach, -30%, -15%);
+            @include darken-background($clr-txt-h1-peach, -30%, -15%);
         }
     }
 

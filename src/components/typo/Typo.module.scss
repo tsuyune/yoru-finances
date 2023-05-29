@@ -22,15 +22,20 @@
     font-weight: 700;
     text-transform: uppercase;
 
-    &_account {
+    &_decor {
+        color: $clr-txt-p-lavander;
+    } 
+    
+    &_account,
+    &_store, &_decor {
         margin: 0;
+    }
 
+    &_account {
         color: $clr-txt-h3-teal;
     }
 
     &_store {
-        margin: 0;
-
         color: $clr-txt-h3-green;
     }
 }

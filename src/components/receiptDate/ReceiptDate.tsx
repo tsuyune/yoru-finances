@@ -1,6 +1,6 @@
 import Typo, { TagValue } from '../typo/Typo';
 
-interface dateProps {
+interface DateProps {
   tag: TagValue;
   type?: string;
 }
@@ -14,7 +14,7 @@ const dateOptions = {
   second: 'numeric',
 } as const;
 
-export default function ReceiptDate({ tag, type }: dateProps) {
+export default function ReceiptDate({ tag, type }: DateProps) {
   const date = new Date();
   const formatDate = (date: Date) => date.toLocaleString('ru-RU', dateOptions).toString();
 

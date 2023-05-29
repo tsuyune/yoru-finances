@@ -14,7 +14,7 @@ $clr-txt-p-white: hsla(0, 0%, 100%, 1);
 $clr-txt-p-lavander: hsla(225, 76%, 92%, 1);
 $clr-txt-p-yellow: hsla(54, 74%, 82%, 1);
 
-@mixin darken-on-hover ($color, $sat, $light) {
+@mixin darken-background($color, $sat, $light) {
   background-color: adjust-color($color, $saturation: $sat, $lightness: $light);
 }
 

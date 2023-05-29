@@ -14,7 +14,7 @@
     transition: all 0.3s ease-in-out;
 
     &:hover:not(&_active) {
-        @include darken-on-hover($clr-bg-dark, 2%, -5%);
+        @include darken-background($clr-bg-dark, 2%, -5%);
     }
 
     &_active {
