@@ -13,7 +13,7 @@ interface ButtonProps {
   children?: ReactNode;
 }
 
-export default function Button({ text = '', icon = 'plus', color = '', type = '', children }: ButtonProps) {
+export default function Button({ className, text = '', icon = 'plus', color = '', type = '', children }: ButtonProps) {
   const className1 = color === 'peach' ? styles.button_peach : '';
   const className2 = type === 'outline' ? styles.button_outline : '';
   const classNameResult = `${styles.button__text} ${className1} ${className2} ${styles.button}`;
@@ -21,7 +21,7 @@ export default function Button({ text = '', icon = 'plus', color = '', type = ''
   const IconComponent = icon === 'plus' ? Plus : Pen;
 
   return (
-    <button className={classNameResult}>
+    <button className={className + " " + classNameResult}>
       {text} {IconComponent && <IconComponent className={styles.button__icon} />}
       {children}
     </button>

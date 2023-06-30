@@ -39,19 +39,26 @@
     }
 
     &_outline {
+        border: 0.2rem solid $clr-txt-h3-teal;
         background: transparent;
-        background-color: $clr-bg-main;
         color: $clr-txt-h3-teal;
-        background-clip: padding-box;
 
         & .button__icon path {
+            transition: all 0.3s ease-in-out;
+
             fill: $clr-txt-h3-teal;
             stroke: $clr-txt-h3-teal;
         }
 
         &:hover {
+            border-color: $clr-txt-h3-green;
             background-color: $clr-txt-h3-green;
             color: $clr-bg-main;
+
+            & .button__icon path {
+                fill: $clr-bg-main;
+                stroke: $clr-bg-main;
+            }
         }
     }
 

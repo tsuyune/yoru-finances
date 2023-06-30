@@ -11,7 +11,7 @@ export default function ReceiptOverviewFooter({ price }: ReceiptProps) {
       <Typo tag="span" type="secondary">
         Total:
       </Typo>
-      <Typo tag="span" type="price">
+      <Typo tag="span" type="total">
         {price} $
       </Typo>
     </footer>

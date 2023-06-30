@@ -1,0 +1,14 @@
+.product {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    list-style-type: none;
+    padding: 0;
+}
